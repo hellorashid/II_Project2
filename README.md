@@ -1,6 +1,7 @@
 # II_Project2
 Interactive Installations Project 2 - Rashid Aziz
 
+Click Here to updates about the project: https://wp.nyu.edu/rashidazizii/category/project-two/
 
 THE PIECE:
 
