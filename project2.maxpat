@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 453.0, 154.0, 667.0, 745.0 ],
+		"rect" : [ 2688.0, 158.0, 993.0, 745.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -227,9 +227,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 469.0, 99.0, 22.0 ],
+					"patching_rect" : [ 45.0, 469.0, 97.0, 22.0 ],
 					"style" : "",
-					"text" : "read video1.mov"
+					"text" : "read apollo.mp4"
 				}
 
 			}
