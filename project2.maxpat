@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2629.0, 148.0, 1467.0, 787.0 ],
+		"rect" : [ 343.0, 140.0, 1012.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1250.0, 810.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 569.0, 1376.0, 63.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.window"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-141",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 987.75, 546.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 987.75, 547.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "5"
 				}
@@ -58,7 +83,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 920.5, 546.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 920.5, 547.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "4"
 				}
@@ -105,19 +129,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-135",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1201.0, 802.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-133",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -149,7 +160,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 859.75, 546.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 863.5, 544.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "3"
 				}
@@ -206,36 +216,36 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u967000957" ],
 									"dim" : [ 1, 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"interp" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
-									"framereport" : [ 0 ],
-									"cache_size" : [ 0.1 ],
-									"fps" : [ 0.0 ],
-									"automatic" : [ 0 ],
 									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"framecount" : [ 0 ],
+									"position" : [ 0.0 ],
 									"colormode" : [ "argb" ],
-									"vol" : [ 1.0 ],
-									"usedstrect" : [ 0 ],
+									"duration" : [ 0 ],
+									"timescale" : [ 600 ],
+									"texture_name" : [ "u607000955" ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
 									"loopreport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "viddll" ],
+									"loopstart" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"time_secs" : [ 0.0 ],
+									"fps" : [ 0.0 ],
 									"moviefile" : [ "" ],
 									"unique" : [ 0 ],
-									"timescale" : [ 600 ],
+									"looppoints" : [ 0, 0 ],
+									"usedstrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"duration" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"texture_name" : [ "u607000955" ],
-									"adapt" : [ 1 ],
 									"loopend" : [ 0 ],
-									"engine" : [ "viddll" ]
+									"output_texture" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"cache_size" : [ 0.1 ]
 								}
 
 							}
@@ -247,36 +257,36 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u967000957" ],
 									"dim" : [ 1, 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"interp" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
-									"framereport" : [ 0 ],
-									"cache_size" : [ 0.1 ],
-									"fps" : [ 0.0 ],
-									"automatic" : [ 0 ],
 									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"framecount" : [ 0 ],
+									"position" : [ 0.0 ],
 									"colormode" : [ "argb" ],
-									"vol" : [ 1.0 ],
-									"usedstrect" : [ 0 ],
+									"duration" : [ 0 ],
+									"timescale" : [ 600 ],
+									"texture_name" : [ "u607000955" ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
 									"loopreport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "viddll" ],
+									"loopstart" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"time_secs" : [ 0.0 ],
+									"fps" : [ 0.0 ],
 									"moviefile" : [ "" ],
 									"unique" : [ 0 ],
-									"timescale" : [ 600 ],
+									"looppoints" : [ 0, 0 ],
+									"usedstrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"duration" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"texture_name" : [ "u607000955" ],
-									"adapt" : [ 1 ],
 									"loopend" : [ 0 ],
-									"engine" : [ "viddll" ]
+									"output_texture" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"cache_size" : [ 0.1 ]
 								}
 
 							}
@@ -288,36 +298,36 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u967000957" ],
 									"dim" : [ 1, 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"interp" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
-									"framereport" : [ 0 ],
-									"cache_size" : [ 0.1 ],
-									"fps" : [ 0.0 ],
-									"automatic" : [ 0 ],
 									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"framecount" : [ 0 ],
+									"position" : [ 0.0 ],
 									"colormode" : [ "argb" ],
-									"vol" : [ 1.0 ],
-									"usedstrect" : [ 0 ],
+									"duration" : [ 0 ],
+									"timescale" : [ 600 ],
+									"texture_name" : [ "u607000955" ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
 									"loopreport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "viddll" ],
+									"loopstart" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"time_secs" : [ 0.0 ],
+									"fps" : [ 0.0 ],
 									"moviefile" : [ "" ],
 									"unique" : [ 0 ],
-									"timescale" : [ 600 ],
+									"looppoints" : [ 0, 0 ],
+									"usedstrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"duration" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"texture_name" : [ "u607000955" ],
-									"adapt" : [ 1 ],
 									"loopend" : [ 0 ],
-									"engine" : [ "viddll" ]
+									"output_texture" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"cache_size" : [ 0.1 ]
 								}
 
 							}
@@ -329,36 +339,36 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u967000957" ],
 									"dim" : [ 1, 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"interp" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
-									"framereport" : [ 0 ],
-									"cache_size" : [ 0.1 ],
-									"fps" : [ 0.0 ],
-									"automatic" : [ 0 ],
 									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"framecount" : [ 0 ],
+									"position" : [ 0.0 ],
 									"colormode" : [ "argb" ],
-									"vol" : [ 1.0 ],
-									"usedstrect" : [ 0 ],
+									"duration" : [ 0 ],
+									"timescale" : [ 600 ],
+									"texture_name" : [ "u607000955" ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
 									"loopreport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "viddll" ],
+									"loopstart" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"time_secs" : [ 0.0 ],
+									"fps" : [ 0.0 ],
 									"moviefile" : [ "" ],
 									"unique" : [ 0 ],
-									"timescale" : [ 600 ],
+									"looppoints" : [ 0, 0 ],
+									"usedstrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"duration" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"texture_name" : [ "u607000955" ],
-									"adapt" : [ 1 ],
 									"loopend" : [ 0 ],
-									"engine" : [ "viddll" ]
+									"output_texture" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"cache_size" : [ 0.1 ]
 								}
 
 							}
@@ -370,36 +380,36 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u967000957" ],
 									"dim" : [ 1, 1 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"loopstart" : [ 0 ],
-									"position" : [ 0.0 ],
-									"interp" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"time" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"time_secs" : [ 0.0 ],
-									"framereport" : [ 0 ],
-									"cache_size" : [ 0.1 ],
-									"fps" : [ 0.0 ],
-									"automatic" : [ 0 ],
 									"autostart" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"framecount" : [ 0 ],
+									"position" : [ 0.0 ],
 									"colormode" : [ "argb" ],
-									"vol" : [ 1.0 ],
-									"usedstrect" : [ 0 ],
+									"duration" : [ 0 ],
+									"timescale" : [ 600 ],
+									"texture_name" : [ "u607000955" ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
 									"loopreport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "viddll" ],
+									"loopstart" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"time_secs" : [ 0.0 ],
+									"fps" : [ 0.0 ],
 									"moviefile" : [ "" ],
 									"unique" : [ 0 ],
-									"timescale" : [ 600 ],
+									"looppoints" : [ 0, 0 ],
+									"usedstrect" : [ 0 ],
 									"drawto" : [ "" ],
-									"duration" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"texture_name" : [ "u607000955" ],
-									"adapt" : [ 1 ],
 									"loopend" : [ 0 ],
-									"engine" : [ "viddll" ]
+									"output_texture" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"cache_size" : [ 0.1 ]
 								}
 
 							}
@@ -465,7 +475,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1032.0, 111.5, 54.0, 22.0 ],
-					"presentation_rect" : [ 908.5, 566.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "gate 1 1"
 				}
@@ -481,7 +490,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
 					"patching_rect" : [ 1032.0, 134.5, 34.0, 22.0 ],
-					"presentation_rect" : [ 908.5, 589.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t b 0"
 				}
@@ -624,7 +632,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 788.0, 437.199951, 146.0, 23.0 ],
 					"style" : "",
-					"text" : "39.808743"
+					"text" : "0."
 				}
 
 			}
@@ -810,7 +818,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cols" : 2,
+					"cols" : 1,
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -1185,9 +1193,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.799988, 1062.199951, 99.0, 22.0 ],
+					"patching_rect" : [ 240.799988, 1062.199951, 86.0, 22.0 ],
 					"style" : "",
-					"text" : "pak dim 160 120"
+					"text" : "pak dim 80 60"
 				}
 
 			}
@@ -1711,7 +1719,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"items" : [ "Microsoft LifeCam Rear", ",", "Microsoft LifeCam Front" ],
+					"items" : [ "Microsoft LifeCam Rear", ",", "Microsoft LifeCam Front", ",", "HD Pro Webcam C920" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2137,32 +2145,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1258.0, 879.899902, 177.0, 22.0 ],
-					"style" : "newobjYellow-1",
-					"text" : "jit.window Movie 5 41 325 281"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1258.0, 846.899902, 102.0, 22.0 ],
-					"style" : "newobjYellow-1",
-					"text" : "jit.movie 320 240"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2197,19 +2179,6 @@
 					"patching_rect" : [ 21.0, 9.0, 137.0, 34.0 ],
 					"style" : "",
 					"text" : "S P A C E T I M E\nProject 2: Rashid Aziz"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"id" : "obj-15",
-					"maxclass" : "panel",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1254.0, 841.899902, 185.0, 70.0 ],
-					"rounded" : 0,
-					"style" : "panelGreen"
 				}
 
 			}
@@ -2302,7 +2271,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -2333,6 +2302,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-102", 0 ],
+					"order" : 1,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -2381,8 +2359,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 1128.5, 713.399902, 1267.5, 713.399902 ],
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 1128.5, 713.399902, 1259.5, 713.399902 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -2426,13 +2404,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-151", 0 ],
 					"source" : [ "obj-128", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -2609,7 +2580,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -2989,8 +2960,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 1448.5, 750.899902, 1267.5, 750.899902 ],
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 1448.5, 750.899902, 1259.5, 750.899902 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
